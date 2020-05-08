@@ -26,7 +26,7 @@
   </extensions>
 
   <actions>
-    <action class="GetterSetterGenerateAction" id="setterGenerator" text="generate setters/getters" keymap="">
+    <action class="GetterSetterGenerateAction" id="setterGenerator" text="Generate Setters/Getters">
       <add-to-group group-id="WindowMenu" anchor="first"/>
     </action>
   </actions>
