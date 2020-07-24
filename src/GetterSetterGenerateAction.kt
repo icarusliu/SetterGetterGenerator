@@ -28,12 +28,12 @@ class GetterSetterGenerateAction : AnAction() {
             if (fields.isEmpty()) {
                 return
             }
-            for (field in fields) {
+            fields.forEach { field ->
                 val name = field.name
                 val type = field.type
                 if (field.modifierList?.hasExplicitModifier("static") == true) {
                     // 静态方法不进行处理
-                    continue
+                    return
                 }
 
                 // 针对每一个属性生成三个方法
